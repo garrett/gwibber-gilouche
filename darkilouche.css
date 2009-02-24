@@ -129,12 +129,12 @@ p { line-height: 125%; }
 
 .toggledupe {
   cursor: pointer;
-  background: url(add.png) no-repeat 0 0;
+  background: url(more.png) no-repeat 0 0;
   position: absolute;
   width: 16px; height: 16px;
   display: block;
   display: none;
-  top: 8px; right: 4px;
+  top: 8px; right: 8px;
 }
 
 .new {

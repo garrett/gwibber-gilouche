@@ -24,7 +24,8 @@ p { line-height: 125%; }
   border: 1px solid #555;
   min-height: 64px;
   position: relative;
-  -webkit-box-shadow: 0 2px 2px #000;
+  -webkit-box-shadow: 0 2px 0 #000;
+  box-shadow: 0 2px 0 #000;
 }
   .message:hover {
 /*    background: rgba(0,0,0,.2);*/
@@ -128,7 +129,7 @@ p { line-height: 125%; }
 
 .toggledupe {
   cursor: pointer;
-  background: url(add.png) no-repeat 0 0;
+  background: url(more.png) no-repeat 0 0;
   position: absolute;
   width: 16px; height: 16px;
   display: block;
