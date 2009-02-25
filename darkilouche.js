@@ -2,7 +2,7 @@
     clearMessages()
     $.each(messages, function() {addMessage(this)});
   }
-  
+
   function clearMessages() {
     $(".messages").html("");
   }
@@ -13,8 +13,10 @@
   }
 
   function setAccountConfig(data) {
+    var conf;
+
     $.each(data, function() {
-      for (var conf in this) {
+      for (conf in this) {
         if (conf.search("color") > 0)
           setMessageColor(this.id, conf, this[conf].red, this[conf].green, this[conf].blue, 0.6);
       }
@@ -26,6 +28,8 @@
   }
 
   function addMessage(data) {
+    var html;
+
     html = '<div id="'+ data.gId +'" class="message '+ data.username + data.protocol + ' ' + data.aId + data.bgcolor +'">';
     html += (data.image ? '<a href="' + data.profile_url +'"><span class="imgbox" style="background-image: url('+ data.image +');"></span></a>' : '');
     html += '<div class="diggbox"></div>';
@@ -56,7 +60,7 @@
           
 
     if (data.is_new)
-      $(".message:last").addClass("new");          
+      $(".message:last").addClass("new");
 
     if (data.is_reply)
       $(".message:last").addClass("reply");
