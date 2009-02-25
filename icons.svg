@@ -6,7 +6,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="400"
@@ -26,49 +25,6 @@
        inkscape:vp_z="744.09448 : 526.18109 : 1"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
        id="perspective10" />
-    <linearGradient
-       y2="10"
-       x2="10.562407"
-       y1="12.461045"
-       x1="9.9029713"
-       gradientTransform="translate(5,0)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient12075"
-       xlink:href="#linearGradient7416"
-       inkscape:collect="always" />
-    <linearGradient
-       y2="10.244349"
-       x2="16.708815"
-       y1="13.426332"
-       x1="16.001709"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient12073"
-       xlink:href="#linearGradient7422"
-       inkscape:collect="always" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient7416">
-      <stop
-         style="stop-color:#ce5c00;stop-opacity:1"
-         offset="0"
-         id="stop7418" />
-      <stop
-         style="stop-color:#f57900;stop-opacity:0"
-         offset="1"
-         id="stop7420" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient7422"
-       inkscape:collect="always">
-      <stop
-         id="stop7424"
-         offset="0"
-         style="stop-color:#f57900;stop-opacity:1;" />
-      <stop
-         id="stop7426"
-         offset="1"
-         style="stop-color:#f57900;stop-opacity:0;" />
-    </linearGradient>
     <inkscape:perspective
        id="perspective9964"
        inkscape:persp3d-origin="8 : 5.3333333 : 1"
@@ -126,7 +82,6 @@
      inkscape:label="plate"
      inkscape:groupmode="layer"
      id="layer1"
-     sodipodi:insensitive="true"
      style="display:none">
     <rect
        style="color:#000000;fill:#fcaf3e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.37591386;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
@@ -146,7 +101,7 @@
        inkscape:label="#rect9917" />
     <rect
        style="color:#000000;fill:#fcaf3e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.37591386;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="tread"
+       id="thread"
        width="16"
        height="16"
        x="54"

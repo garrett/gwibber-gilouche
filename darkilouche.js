@@ -66,6 +66,28 @@
       function() {$(this).find(".replybutton").hide()});
   }
 
+  function setAccountConfig(data) {
+    $.each(data, function() {
+      for (var conf in this) {
+        if (conf.search("color") > 0)
+          setMessageColor(this.id, conf, this[conf].red, this[conf].green, this[conf].blue, .1);
+        }
+      });
+    } 
+
+  function setGtkConfig(data) {
+    var fgcolor = "rgba("+data.fg.red+","+data.fg.green+","+data.fg.blue+",1)";
+    var bgcolor = "rgba("+data.bg.red+","+data.bg.green+","+data.bg.blue+",1)";
+/*    var debugit = '';
+    for (key in data) {
+      debugit += "key: "+key+" value: "+data[key]+"<br>";
+    }
+    $("body").append("<h1>"+debugit+"</h1>");
+  */  
+
+    $("body").css({'color': fgcolor, 'background-color': bgcolor});
+  } 
+
   function setMessageColor(aId, colorName, r, g, b, a) {
-//        $('.'+aId+colorName).css('background', '-webkit-gradient(linear, left top, left 220%, from(rgba('+r+','+g+','+b+','+a+')), to(black))')
+    $('.'+aId+colorName).css('background', 'rgba('+r+','+g+','+b+','+a+')');
   }
