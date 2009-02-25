@@ -1,13 +1,13 @@
 body {
   margin: 0;
   word-break: break-word;
-  background: #fff;
   color: #222;
   font-size: 9pt;
   font-family: "Droid Sans", Sans-serif;
+  background: url(loading.png) #fff no-repeat center center;
 }
 
-a { color: #204a87; outline: none; }
+a { /* color: Highlight; */ color: #204a87; outline: none; text-shadow: 0 1px 1px rgba(0,0,0,0.5); }
   a:hover { color: #57900; }
   a:hover, .time a:hover { text-decoration: underline; }
   .time a { color: #666 }
