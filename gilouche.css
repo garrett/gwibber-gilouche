@@ -19,8 +19,8 @@ p { line-height: 125%; }
   padding: 0;
   margin: 6px;
   -webkit-border-radius: 6px;
-  background: rgba(0,0,0,.125);
-  border: 1px solid #555;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid #aaa;
   min-height: 64px;
   position: relative;
   -webkit-box-shadow: 0 2px 0 #000;
