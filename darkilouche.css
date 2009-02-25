@@ -12,13 +12,12 @@ a { color: #fcaf3e; outline: none; }
   a:hover, .time a:hover { text-decoration: underline; }
   .time a { color: #666 }
   .time a:hover { color: #fff; }
-  
+
 p { line-height: 125%; }
 
 .message {
   padding: 0;
   margin: 6px;
-  //text-shadow: 1px 1px black;
   -webkit-border-radius: 6px;
   background: rgba(0,0,0,.5);
   border: 1px solid #555;
@@ -114,7 +113,7 @@ p { line-height: 125%; }
 .reply {
   background: rgba(0,0,0,.2);
   margin: 4px;
-  border: 2px solid #fff;  
+  border: 2px solid #fff;
 }
 
 .dupes {
@@ -139,5 +138,5 @@ p { line-height: 125%; }
 
 .new {
   margin: 4px;
-  border: 2px solid #888;  
+  border: 2px solid #888;
 }
