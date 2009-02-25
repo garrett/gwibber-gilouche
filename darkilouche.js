@@ -1,6 +1,9 @@
   function addMessages(messages) {
-    clearMessages()
-    $.each(messages, function() {addMessage(this)});
+    clearMessages();
+
+    $.each(messages, function() {
+      addMessage(this);
+    });
   }
 
   function clearMessages() {
@@ -50,8 +53,8 @@
     if (data.is_duplicate) {
       $("#" + data.gId + " .dupes:first").append(html);
       $("#" + data.gId + " .toggledupe:first").show(0).unbind().toggle(
-        function() {$(this).parent().find(".dupes").show(100)},
-        function() {$(this).parent().find(".dupes").hide(100)});
+        function() {$(this).parent().find(".dupes").show(100);},
+        function() {$(this).parent().find(".dupes").hide(100);});
     } else $(".messages").append(html);
 
     if (data.protocol == "digg")
@@ -68,8 +71,8 @@
       $(".message:last").addClass("private");
 
     $(".message:last").hover(
-      function() {$(this).find(".replybutton").show(200)},
-      function() {$(this).find(".replybutton").hide()});
+      function() {$(this).find(".replybutton").show(200);},
+      function() {$(this).find(".replybutton").hide();});
   }
 
   function setAccountConfig(data) {
