@@ -1,14 +1,14 @@
 body {
   margin: 0;
   word-break: break-word;
-  background: #444;
-  color: #fff;
+  background: #fff;
+  color: #222;
   font-size: 9pt;
   font-family: "Droid Sans", Sans-serif;
 }
 
-a { color: #fcaf3e; outline: none; }
-  a:hover { color: #fff; }
+a { color: #204a87; outline: none; }
+  a:hover { color: #57900; }
   a:hover, .time a:hover { text-decoration: underline; }
   .time a { color: #666 }
   .time a:hover { color: #fff; }
@@ -19,7 +19,7 @@ p { line-height: 125%; }
   padding: 0;
   margin: 6px;
   -webkit-border-radius: 6px;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.125);
   border: 1px solid #555;
   min-height: 64px;
   position: relative;
@@ -39,7 +39,7 @@ p { line-height: 125%; }
   padding: 0;
   font-size: 105%;
   font-weight: bold;
-  text-shadow: 0 2px 2px #000;
+  text-shadow: 0 2px 2px #ddd;
   /* sadly this doesn't seem to work
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#aaa));
   -webkit-background-clip: text;
