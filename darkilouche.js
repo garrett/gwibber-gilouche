@@ -26,7 +26,7 @@
   }
 
   function addMessage(data) {
-    html = '<div id="'+ data.gId +'" class="message '+ data.username + data.protocol + ' ' + data.aId + data.bgcolor +'" title="'+ data.sender_nick +'">';
+    html = '<div id="'+ data.gId +'" class="message '+ data.username + data.protocol + ' ' + data.aId + data.bgcolor +'">';
     html += (data.image ? '<a href="' + data.profile_url +'"><span class="imgbox" style="background-image: url('+ data.image +');"></span></a>' : '');
     html += '<div class="diggbox"></div>';
     html += '<p class="content">'
