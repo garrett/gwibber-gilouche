@@ -78,7 +78,7 @@ p { line-height: 125%; }
 
 .inlinenick {
   text-decoration: none;
-  font-weight: bold;       
+  font-weight: bold;
 }
 
 .replybutton {
@@ -87,7 +87,7 @@ p { line-height: 125%; }
   width: 16px; height: 16px;
   right: 4px;
   display: none;
-  vertical-align: bottom; 
+  vertical-align: bottom;
 }
   a.reply  { bottom: 4px; background: url(reply.png) no-repeat 0 0; }
   a.thread { bottom: 24px; background: url(thread.png) no-repeat 0 0; }
