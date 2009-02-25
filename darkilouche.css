@@ -1,10 +1,10 @@
 body {
   margin: 0;
   word-break: break-word;
-  background: #444;
   color: #fff;
   font-size: 9pt;
   font-family: "Droid Sans", Sans-serif;
+  background: url(loading.png) #fff no-repeat center center;
 }
 
 a { /* color: Highlight; */ color: #fcaf3e; outline: none; text-shadow: 0 1px 1px rgba(0,0,0,0.5); }
