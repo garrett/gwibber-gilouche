@@ -70,9 +70,13 @@
     if (data.is_private)
       $(".message:last").addClass("private");
 
-    $(".message:last").hover(
-      function() {$(this).find(".replybutton").show(200);},
-      function() {$(this).find(".replybutton").hide();});
+    $(".message:last").hover(function() {
+      var $buttons = $("a.replybutton"),
+          $button  = $("a.replybutton", this);
+
+      $buttons.not($button).fadeOut(125);
+      $button.show(200);
+    });
   }
 
   function setAccountConfig(data) {
