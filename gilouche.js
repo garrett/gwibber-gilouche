@@ -97,7 +97,8 @@
     $("body").append("<h1>"+debugit+"</h1>");
   */  
 
-    $("body").css({'background-image': 'none'});
+    //$("body").css({'color': fgcolor, 'background-color': bgcolor, 'background-image': 'none'});
+    $("body").css('background-image', 'none');
   } 
 
   function setMessageColor(aId, colorName, r, g, b, a) {
