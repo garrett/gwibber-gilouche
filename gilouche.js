@@ -98,7 +98,7 @@
   */  
 
     //$("body").css({'color': fgcolor, 'background-color': bgcolor, 'background-image': 'none'});
-    $("body").css('background-image', 'none');
+    $("body").css('background-image','none');
   } 
 
   function setMessageColor(aId, colorName, r, g, b, a) {
