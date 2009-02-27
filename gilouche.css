@@ -72,7 +72,7 @@ p { line-height: 125%; }
   font-size: 95%;
 }
 .message .text {
-  opacity: .8;
+  opacity: .85;
 }
   .message:hover .text { opacity: 1; }
 
