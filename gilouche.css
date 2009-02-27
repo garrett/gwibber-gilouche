@@ -70,9 +70,11 @@ p { line-height: 125%; }
 .text {
   display: block;
   font-size: 95%;
+}
+.message .text {
   opacity: .8;
 }
-  .text:hover { opacity: 1; }
+  .message:hover .text { opacity: 1; }
 
 .inlinenick {
   text-decoration: none;
