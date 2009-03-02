@@ -94,3 +94,16 @@
   function setMessageColor(aId, colorName, r, g, b, a) {
     $('.'+aId+colorName).css('background', 'rgba('+r+','+g+','+b+','+a+')');
   }
+  
+  function addUserHeader(data) {
+    html = '<div id="'+ data.gId +'" class="message '+ data.username + data.protocol + 
+    data.aId + data.bgcolor +'" title="'+ data.sender_nick +'">' +
+  	'<p class="content" style="text-align: center;"> \
+  	<span class="title">'+ data.sender +'</span><br /> \
+  	<span class="text">'+ data.sender_followers_count +' followers</span><br /> \
+  	<span class="text">'+ data.sender_location +'</span><br /> \
+  	<span class="text"><a href="'+ data.external_profile_url  +'">'+ data.external_profile_url +'</a></span> \
+  	</p> \
+	</div>'
+		$(".header").html(html);
+      }
