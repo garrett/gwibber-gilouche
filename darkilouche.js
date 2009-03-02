@@ -48,6 +48,7 @@
       '  <div class="dupes"></div>',
       (data.can_thread ? '<a class="thread replybutton" href="gwibber:thread/' + data.message_index + '"></a>' : ''),
       '<a class="reply replybutton" href="gwibber:reply/'+ data.message_index +'"></a>',
+      (data.is_unread ? '<div class="unread"></div>' : ''),
       '</div>'
     ].join('');
 
