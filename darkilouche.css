@@ -93,6 +93,13 @@ p { line-height: 125%; }
   a.reply  { bottom: 4px; background: url(reply.png) no-repeat 0 0; }
   a.thread { bottom: 24px; background: url(thread.png) no-repeat 0 0; }
 
+.unread {
+  position: absolute;
+  top: 2px; left: 2px;
+  width: 8px; height: 8px;
+  background: url(star.png) no-repeat left top;
+}
+
 .diggbox {
   margin-right: 2px;
   padding: 1px;

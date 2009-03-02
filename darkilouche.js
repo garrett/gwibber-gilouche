@@ -40,7 +40,7 @@
     html += '  <div class="dupes"></div>';
     html += (data.can_thread ? '<a class="thread replybutton" href="gwibber:thread/' + data.message_index + '"></a>' : '');
     html += '<a class="reply replybutton" href="gwibber:reply/'+ data.message_index +'"></a>';
-
+    html += (data.is_unread ? '<div class="unread"></div>' : '');
     html += '</div>';
 
     if (data.is_duplicate) {
@@ -52,6 +52,8 @@
 
     if (data.protocol == "digg")
       addDiggCount($(".diggbox:last"), data);
+
+          
 
     if (data.is_new)
       $(".message:last").addClass("new");          
