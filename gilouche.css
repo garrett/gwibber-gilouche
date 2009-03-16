@@ -120,7 +120,7 @@ p { line-height: 125%; }
 .reply {
   background: rgba(0,0,0,.2);
   margin: 4px;
-  border: 2px solid #fff;
+  border: 2px solid #777;
 }
 
 .dupes {
