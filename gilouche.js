@@ -1,9 +1,9 @@
 /** Custom theme code */
 var Theme = function(){
-  var private, public;
+  var priv, pub;
 
   // Private functions (those not accessed outside of the Theme scope)
-  private = {
+  priv = {
     /** Add a Digg count to the message */
     addDiggCount: function(message, data) {
       message.html('<p><span class="diggcount">' + data.diggs + '</span><br /><small>diggs</small></p>');
@@ -46,7 +46,7 @@ var Theme = function(){
       }
 
       if (data.protocol === "digg") {
-        private.addDiggCount($(".diggbox:last"), data);
+        priv.addDiggCount($(".diggbox:last"), data);
       }
 
       $lastMessage = $('.message:last');
@@ -72,7 +72,7 @@ var Theme = function(){
 
 
   // Public functions, which may be accessed as Theme.functionName()
-  public = {
+  pub = {
     /** Remove messages from the timeline */
     clearMessages: function() {
       $(".messages").empty();
@@ -80,10 +80,10 @@ var Theme = function(){
 
     /** Add messages to the timeline */
     addMessages: function(messages) {
-      public.clearMessages();
+      pub.clearMessages();
 
       $.each(messages, function() {
-        private.addMessage(this);
+        priv.addMessage(this);
       });
     },
 
@@ -100,7 +100,7 @@ var Theme = function(){
       $.each(data, function() {
         for (conf in this) {
           if (conf.search("color") > 0) {
-            private.setMessageColor(this.id, conf, this[conf].red, this[conf].green, this[conf].blue, 0.1);
+            priv.setMessageColor(this.id, conf, this[conf].red, this[conf].green, this[conf].blue, 0.1);
           }
         }
       });
@@ -127,7 +127,7 @@ var Theme = function(){
 
   };
 
-  return public;
+  return pub;
 }();
 
 
