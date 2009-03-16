@@ -72,6 +72,7 @@ var Theme = function(){
 
 
   // Public functions, which may be accessed as Theme.functionName()
+  // These are automagically exported (below) for Gwibber
   pub = {
     /** Remove messages from the timeline */
     clearMessages: function() {
@@ -131,7 +132,7 @@ var Theme = function(){
 }();
 
 
-/** map standard Gwibber functions to Theme's public functions */
+/** map Theme's public functions to Gwibber's standard functions */
 for (var i in Theme) {
   if (typeof Theme[i] === 'function') {
     window[i] = Theme[i];
