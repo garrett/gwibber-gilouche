@@ -16,7 +16,7 @@ var Theme = function(){
           $lastMessage;
 
       html = [
-        '<div id="' + data.gId + '" class="message ' + data.username + data.protocol + ' ' + data.aId + data.bgcolor + '" title="' + data.sender_nick + '">',
+        '<div id="' + data.gId + '" class="message ' + data.username + data.protocol + ' ' + data.aId + data.bgcolor + '">',
         (data.image ? '<a href="' + data.profile_url + '"><span class="imgbox" style="background-image: url(' + data.image + ');"></span></a>' : ''),
         '<div class="diggbox"></div>',
         '<p class="content">',
