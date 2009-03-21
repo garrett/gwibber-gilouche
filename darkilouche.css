@@ -18,7 +18,7 @@ p { line-height: 125%; }
 .message {
   padding: 0;
   margin: 6px;
-  //text-shadow: 1px 1px black;
+  /* text-shadow: 1px 1px black; */
   -webkit-border-radius: 6px;
   background: rgba(0,0,0,.5);
   border: 1px solid #555;
