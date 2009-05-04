@@ -114,12 +114,12 @@ var Theme = function(){
       html = [
         '<div id="' + data.gId + '" class="message ' + data.username + data.protocol,
         data.aId + data.bgcolor + '" title="' + data.sender_nick + '">',
-        '<p class="content" style="text-align: center;">',
-        '<span class="title">' + data.sender + '</span><br />',
-        '<span class="text">' + data.sender_followers_count + ' followers</span><br />',
-        '<span class="text">' + data.sender_location + '</span><br />',
-        '<span class="text"><a href="' + data.external_profile_url  + '">' + data.external_profile_url + '</a></span>',
-        '</p>',
+        '<div class="content about">',
+        '<div class="title">' + data.sender + '</div>',
+        '<div><span class="text">' + data.sender_followers_count + ' followers</span>, ',
+        '<span class="text">' + data.sender_location + '</span>.</div>',
+        '<div class="url"><a href="' + data.external_profile_url  + '">' + data.external_profile_url + '</a></div>',
+        '</div>',
         '</div>'
       ].join('');
 

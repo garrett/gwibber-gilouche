@@ -51,6 +51,10 @@ p { line-height: 125%; }
   margin: 4px;
   padding: 2px 20px 2px 54px;
 }
+  .content.about {
+    padding: 2px 20px 2px 6px;
+    font-size: 80%;
+  }
 
 .time a {
   font-size: 80%;
@@ -71,7 +75,7 @@ p { line-height: 125%; }
 }
 
 .text {
-  display: block;
+  display: inline-block;
   font-size: 95%;
   opacity: .8;
 }
@@ -147,4 +151,8 @@ p { line-height: 125%; }
 .new {
   margin: 4px;
   border: 2px solid #888;  
+}
+
+.about .url {
+  margin-top: 1em;
 }
