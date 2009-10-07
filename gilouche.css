@@ -16,6 +16,7 @@ p { line-height: 125%; }
 .message {
   padding: 0;
   margin: 6px;
+  /* text-shadow: 1px 1px black; */
   -webkit-border-radius: 6px;
   background: rgba(0,0,0,0.1);
   border: 1px solid #aaa;
@@ -48,6 +49,10 @@ p { line-height: 125%; }
   margin: 4px;
   padding: 2px 20px 2px 54px;
 }
+  .content.about {
+    padding: 2px 20px 2px 6px;
+    font-size: 80%;
+  }
 
 .time a {
   font-size: 80%;
@@ -68,7 +73,7 @@ p { line-height: 125%; }
 }
 
 .text {
-  display: block;
+  display: inline-block;
   font-size: 95%;
 }
 .message .text {
@@ -95,7 +100,7 @@ p { line-height: 125%; }
 .unread {
   position: absolute;
   top: 2px; left: 2px;
-  width: 8px; height: 8px;
+  width: 11px; height: 11px;
   background: url(star.png) no-repeat left top;
 }
 
@@ -145,5 +150,9 @@ p { line-height: 125%; }
 
 .new {
   margin: 4px;
-  border: 2px solid #888;
+  border: 2px solid #888;  
+}
+
+.about .url {
+  margin-top: 1em;
 }
